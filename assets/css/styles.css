@@ -135,7 +135,7 @@ a.site-logo .image {
     transform: translateY(-3px) rotate(-45deg);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 728px) {
     .container {
         max-width: 720px;
     }
@@ -228,6 +228,7 @@ a.site-logo .image {
     right: 100px;
     margin-top: 140px;
     height: 500px;
+    padding: 0 !important;
 }
 
 .card-add {
@@ -285,10 +286,12 @@ a.site-logo .image {
 }
 
 #gallery .gallery .image {
+    width: 25%;
 }
 
 #gallery .gallery .image .card {
     padding: 5px;
+    margin-top: 20px;
     border-radius: 10px;
 }
 
@@ -341,23 +344,6 @@ a.site-logo .image {
     margin: auto;
     max-width: 968px;
     font-size: 20px;
-}
-
-@media (max-width: 768px) {
-    #gallery .gallery .image {
-        padding: 0 50px;
-    }
-
-    #gallery .gallery .image img {
-        width: 500px;
-        height: 17em;
-    }
-}
-
-@media (max-width: 598px) {
-    #gallery .gallery .image {
-        padding: 0 20px;
-    }
 }
 
 .button {
@@ -421,4 +407,151 @@ a.site-logo .image {
     margin-right: 10px;
     background-color: #000000;
     text-align: center;
+}
+@media (max-width: 988px) and (min-width: 728px){
+    #gallery .gallery .image .card h2 {
+        text-align: center;
+        font-size: 16px;
+        background-color: white;
+        color: #121212;
+    }
+    .site-navbar{
+        margin: 0 30px 0 30px;
+    }
+    #footer .logo img {
+        margin-left: 10px;
+    }
+}
+@media (max-width: 728px){
+    a.site-logo {
+        margin-left: 20px;
+    }
+    a.site-logo .image {
+        margin: 15px 0;
+        height: 40px;
+        width: 70px;
+    }
+
+    .card-add .banner {
+        top: 0;
+        right: 0;
+        position: absolute;
+        height: 250px;
+    }
+    .card-add h3 {
+        margin-top: 40px;
+        width: 160px;
+        color: #000;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+    .card-add strong {
+        width: 200px;
+        color: #000;
+        font-size: 54px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+    }
+    .site-navbar .disapear{
+        display: none;
+    }
+    .site-navbar input{
+        width: 200px;
+        height: 30px;
+    }
+    .jumbotron-container {
+        height: 400px;
+
+    }
+    .embla{
+        margin-top: 100px;
+        left: 20px;
+        right: 20px;
+    }
+    .card-add {
+        margin: 0 auto;
+        border-radius: 16px;
+        background: #FDD90A;
+        max-width: 600px;
+        min-height: 220px;
+        position: relative;
+        overflow: hidden;
+    }
+    #gallery{
+        padding: 0 10px 50px 5px;
+        margin: 20px 5px;
+    }
+    #gallery .gallery .row{
+        justify-content: space-evenly;
+    }
+    #gallery .gallery .image {
+        margin: 10px 0;
+        justify-content: space-around;
+        width: 170px;
+        height: 170px;
+    }
+    #gallery .title h1 {
+        padding: 50px 10px 0 10px;
+        color: #fff;
+        font-size: 1.2em;
+        text-align: left;
+        font-weight: 800;
+    }
+    #gallery .title h1 img {
+        padding: 0 20px;
+        height: 1.5em;
+    }
+    #gallery .gallery .image img {
+        height: 9em;
+    }
+    #gallery .gallery .image .card h2 {
+        margin-top: 10px;
+        text-align: center;
+        font-size: 14px;
+        background-color: white;
+        color: #121212;
+    }
+    .site-navbar{
+        margin: 0;
+    }
+    #footer {
+        min-width: 100%;
+        margin: 0;
+        padding: 10px 0;
+        background-color: #000000;
+        height: 220px;
+        color: white;
+        font-size: 14px;
+        font-weight: 800;
+        overflow: hidden;
+    }
+    #footer .logo img {
+        margin:auto;
+        background-color: #000000;
+        text-align: center;
+    }
+    #footer .item h1 {
+        color: #FFF;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+    #footer .item p {
+        color: #FFF;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+    #footer .logo .icon {
+        margin-left: 0;
+        margin-right: 5px;
+        background-color: #000000;
+        text-align: center;
+        width: 20px;
+    }
 }
